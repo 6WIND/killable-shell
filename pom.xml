@@ -1,0 +1,78 @@
+<!--
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Copyright (c) 2015, 6WIND S.A. All rights reserved. *
+* *
+* This file is part of the Jenkins Killable Shell Plugin and is *
+* published under the MIT license. *
+* *
+* See the "LICENSE.txt" file for more information. *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>1.580.2</version>
+		<relativePath/>
+	</parent>
+
+	<groupId>org.6wind.jenkins</groupId>
+	<artifactId>killable-shell</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>hpi</packaging>
+
+	<name>Killable Shell Plugin</name>
+	<description>
+		This plugin allow to configure the signal sent to processes
+		spawned by job shells when the user hit the job abort button,
+		and configure the maximum number of seconds to wait after
+		the signal emission to kill the process the usual way.
+	</description>
+
+	<url>https://wiki.jenkins-ci.org/display/JENKINS/KillableShellPlugin</url>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>julien-courtat</id>
+			<name>Julien Courtat</name>
+			<email>julien.courtat@6wind.com</email>
+			<roles>
+				<role>developer</role>
+				<role>maintainer</role>
+			</roles>
+			<timezone>CET</timezone>
+		</developer>
+	</developers>
+
+	<repositories>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<scm>
+		<connection>scm:git:git://github.com/6WIND/killable-shell-plugin.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/6WIND/killable-shell-plugin.git</developerConnection>
+		<url>https://github.com/6WIND/external-resources-plugin</url>
+	</scm>
+
+</project>
